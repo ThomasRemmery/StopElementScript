@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.3.11520.95
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StopElement", "StopElement\StopElement.csproj", "{8F2A2106-D108-4AF5-AC8D-81191B76D8B3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8F2A2106-D108-4AF5-AC8D-81191B76D8B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F2A2106-D108-4AF5-AC8D-81191B76D8B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F2A2106-D108-4AF5-AC8D-81191B76D8B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F2A2106-D108-4AF5-AC8D-81191B76D8B3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B74B877E-6469-4037-B05D-4D7A94CDD30B}
+	EndGlobalSection
+EndGlobal
