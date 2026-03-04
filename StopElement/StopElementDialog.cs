@@ -22,8 +22,8 @@
 			Title = "Stop Element";
 
 			SetDropDownOptions();
-			BuildUi();
 			HandleEvents();
+			BuildUi();
 		}
 
 		private void SetDropDownOptions()
@@ -32,13 +32,6 @@
 			var activeElements = dms.GetElements().Where(e => e.State == ElementState.Active).ToList();
 			var options = activeElements.Select(x => new Option<IDmsElement>(x.Name, x));
 			activeElementDropDown.SetOptions(options);
-		}
-
-		private void BuildUi()
-		{
-			AddWidget(pickElementLabel, 0, 0);
-			AddWidget(activeElementDropDown, 0, 1);
-			AddWidget(stopElementButton, 1, 0, 1, 2, HorizontalAlignment.Right);
 		}
 
 		private void HandleEvents()
@@ -51,6 +44,13 @@
 				activeElementDropDown.Selected.Stop();
 				Engine.ExitSuccess("Stopped element: " + activeElementDropDown.Selected.Name);
 			};
+		}
+
+		private void BuildUi()
+		{
+			AddWidget(pickElementLabel, 0, 0);
+			AddWidget(activeElementDropDown, 0, 1);
+			AddWidget(stopElementButton, 1, 0, 1, 2, HorizontalAlignment.Right);
 		}
 	}
 }
