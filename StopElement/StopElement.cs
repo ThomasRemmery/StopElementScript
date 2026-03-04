@@ -19,6 +19,7 @@ namespace StopElement
 	using System.Text;
 
 	using Skyline.DataMiner.Automation;
+	using Skyline.DataMiner.Utils.InteractiveAutomationScript;
 
 	/// <summary>
 	/// Represents a DataMiner Automation script.
@@ -64,7 +65,9 @@ namespace StopElement
 
 		private void RunSafe(IEngine engine)
 		{
-			// TODO: Define code here
+			var controller = new InteractiveController(engine);
+			var dialog = new StopElementDialog(engine);
+			controller.ShowDialog(dialog);
 		}
 	}
 }
