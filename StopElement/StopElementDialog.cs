@@ -19,6 +19,8 @@
 
 		public StopElementDialog(IEngine engine) : base(engine)
 		{
+			Title = "Stop Element";
+
 			SetDropDownOptions();
 			BuildUi();
 			HandleEvents();
